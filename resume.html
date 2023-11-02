@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>Resume</li>
+            </ol>
+        </nav>
+        <h2>Resume</h2>
+        <iframe id="resume" title="Resume" src="files/Resume.pdf" width="500" height="600">
+        </iframe>
+        <br>
+        <section>
+            <h2>Experimental Section</h2>
+            <h3>Extra credit:</h3>
+            <section>
+                <p>
+                    <math display="inline">
+                        <mi>E</mi>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <msup>
+                            <mi>c</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </math>
+                </p>
+            </section>
+            <br>
+            <p>This is an <svg width="50" height="50"><rect x="0" y="0" width="25" height="30" fill="grey"></rect></svg>svg example</p>
+            <button type="submit" onclick="">Photos</button>
+            <hr>
+            <label for="project-select">Select a Project</label>
+            <br>
+            <select id="project-select">
+                <optgroup label="School Projects">
+                    <option>catHead</option>
+                    <option>Forward Error Correction Processor</option>
+                    <option>File Compressor</option>
+                </optgroup>
+            </select>
+            <hr>
+            <label for="advice">Give me some advice</label>
+            <br>
+            <textarea id="advice" name="advice" rows="5" cols="35">How can I improve myself...?
+            </textarea>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">This is a table</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">Animal</th>
+                        <th scope="col">Food</th>
+                        <th scope="col">Color</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Penguin</th>
+                        <td>Fish</td>
+                        <td>Black</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>This is another table</caption>
+                <colgroup>
+                    <col span="1" class="superheroes">
+                </colgroup>
+                <tr>
+                    <th scope="col">Iron Man</th>
+                </tr>
+            </table>
+            <br>
+            <template>
+                <h1>This is a template example</h1>
+            </template>
+            <div class="example">
+                <h1>I am using a div here</h1>
+            </div>
+            <br>
+            <figure>
+                <figcaption>Why Are There Frozen Pizzas In The Detergent Aisle</figcaption>
+                <audio controls src="audio/why_are_there_frozen_pizzas_in_the_detergent_aisle.mp3"></audio>
+            </figure>
+            <figure>
+                <figcaption>test video</figcaption>
+                <video controls src="video/video1178043283.mp4" width="768" height="432"></video>
+            </figure>
+            <br>
+            <pre><strong>T H I S  I S  A  P R E  T A G</strong></pre>
+            <br>
+            <code>transfer(someone's money, my account)</code>
+            <br>
+            <label for="resume-projects">Pick a Project</label>
+            <input list="projects" id="resume-projects" name="projects">
+            <datalist id="projects">
+                <option value="catHead"></option>
+                <option value="Forward Error Correcting Processor"></option>
+                <option value="File Compressor"></option>
+            </datalist>
+            <br>
+            <h3>Canvas example:</h3>
+            <canvas width="200" height="10">Canvas Example</canvas>
+        </section>
+    </body>
+</html>
