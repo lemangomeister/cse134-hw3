@@ -35,8 +35,26 @@ li > a{
     text-decoration: none;
 }
 
+li > a.class{
+    color: yellow;
+}
+
 li > a:hover{
     background-color: black;
+    color: white;
+}
+
+h2.about {
+    padding: 0;
+    border: 0;
+}
+
+.about{
+    text-align: center;
+    padding: 0;
+    padding-left: 10em;
+    padding-right: 10em;
+    list-style-type: none;
     color: white;
 }
 
