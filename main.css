@@ -2,8 +2,11 @@ body{
     background-color: grey;
 }
 nav {
-    background-color: white; 
-    
+    /* background-color: white;  */
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -14,6 +17,9 @@ ul{
     display : flex;
     color : black;
     background-color: grey;
+    margin: 0;
+    /* width : 5em; */
+    padding : 1em;
 }
 
 li > a{
@@ -37,7 +43,15 @@ li > a:hover{
 #grid-home{
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#name{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    padding: 5em;
 }
 
 
