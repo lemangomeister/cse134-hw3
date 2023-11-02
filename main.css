@@ -13,18 +13,31 @@ ul{
     flex-wrap: wrap;
     display : flex;
     color : black;
-    text-decoration: none;
     background-color: grey;
 }
 
 li > a{
+    margin: 1em;
     width : 5em;
     padding : 1em;
+    color: white;
+    text-decoration: none;
 }
 
 li > a:hover{
     background-color: black;
     color: white;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+#grid-home{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
 
 
