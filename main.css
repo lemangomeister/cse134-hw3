@@ -1,0 +1,31 @@
+body{
+    background-color: grey;
+}
+nav {
+    background-color: white; 
+    
+}
+
+ul{
+    list-style-type: none;
+    /* text-align: center;  */
+    justify-content: center;
+    flex-wrap: wrap;
+    display : flex;
+    color : black;
+    text-decoration: none;
+    background-color: grey;
+}
+
+li > a{
+    width : 5em;
+    padding : 1em;
+}
+
+li > a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
