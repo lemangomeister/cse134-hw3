@@ -1,9 +1,19 @@
-body{
-    background-color: grey;
+:root{
+    --main-background-color: #111;
+    --text-color: white;
+    --triton-blue: rgb(0, 149, 230);
+    --triton-yellow: #ffcd00;
 }
+
+body{
+    background-color: var(--main-background-color);
+    font-family: 'Gill sans', 'Trebuchet MS', sans-serif;
+}
+
 
 footer {
     text-align: center;
+    color: var(--text-color);
 }
 
 nav {
@@ -14,6 +24,8 @@ nav {
     padding: 0;
 }
 
+
+
 ul{
     list-style-type: none;
     /* text-align: center;  */
@@ -21,7 +33,7 @@ ul{
     flex-wrap: wrap;
     display : flex;
     color : black;
-    background-color: grey;
+    background-color: var(--main-background-color);
     margin: 0;
     /* width : 5em; */
     padding : 1em;
@@ -31,7 +43,7 @@ li > a{
     margin: 1em;
     width : 5em;
     padding : 1em;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -65,35 +77,59 @@ h2.about {
 
 #home-grid{
     display: grid;
-    grid-template-columns: 302px auto 302px;
-    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    justify-content: safe;
     align-content: center;
 }
 
-#home-school{
-    grid-column: 3;
+#home-name{
+    grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 273px;
+    padding-top: 350px;
+    padding-right: 6em;
     display: block;
     text-align: center;
+    color: var(--text-color);
+}
+
+#home-university{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    padding-top: 380px;
+    padding-right: 6em;
+    display: block;
+    text-align: center;
+    color: var(--triton-yellow);
+}
+
+#home-city{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    padding-top: 410px;
+    padding-right: 6em;
+    display: block;
+    text-align: center;
+    color: var(--triton-blue);
 }
 
 #home-photos{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     margin: 0;
     align-items: center;
 }
 
-#home-name{
+/* #home-name{
     grid-column: 1;
     grid-row: 1;
     padding-top: 273px;
     margin: 0;
     display: block;
     text-align: center;
-}
+} */
 
 
 
