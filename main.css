@@ -23,75 +23,6 @@
     66% {color: var(--triton-yellow);}
 }
 
-body{
-    background-color: var(--main-background-color);
-    font-family: 'Gill sans', 'Trebuchet MS', sans-serif;
-}
-
-nav {
-    /* background-color: white;  */
-    position: sticky;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 1.25em;
-}
-
-
-
-ul{
-    list-style-type: none;
-    /* text-align: center;  */
-    justify-content: center;
-    flex-wrap: wrap;
-    display : flex;
-    color : black;
-    background-color: var(--main-background-color);
-    margin: 0;
-    /* width : 5em; */
-    padding : 1em;
-}
-
-li > a{
-    margin: 1em;
-    width : 5em;
-    padding : 1em;
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-li > a.language:hover{
-    color: var(--triton-yellow);
-    background-color: var(--triton-blue);
-}
-
-li > a:hover{
-    background-color: white;
-    color: black;
-}
-
-h2{
-    color: var(--text-color);
-}
-
-h2.about {
-    padding: 0;
-    padding-top: 5vh;
-    border: 0;
-    font-size: 4em;
-}
-
-h3{
-    color: var(--text-color);
-}
-
-iframe{
-    height: 92vh;
-    width: 45vw;
-    margin-left: 27vw;
-    margin-right: auto;
-}
-
 .about{
     text-align: center;
     padding: 0;
@@ -107,6 +38,11 @@ iframe{
     font-weight: bolder;
 }
 
+body{
+    background-color: var(--main-background-color);
+    font-family: 'Gill sans', 'Trebuchet MS', sans-serif;
+}
+
 #gallery{
     display: grid;
     margin: 30px 20px;
@@ -115,15 +51,15 @@ iframe{
     justify-content: space-evenly;
 }
 
-img#fluffy-mascot, img#stuntman{
-    padding-left: 15px;
+h2{
+    color: var(--text-color);
 }
 
-#home-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: safe;
-    align-content: center;
+h2.about {
+    padding: 0;
+    padding-top: 5vh;
+    border: 0;
+    font-size: 4em;
 }
 
 h2#home-name{
@@ -174,6 +110,21 @@ h2#home-city{
     animation-iteration-count: infinite;
 }
 
+h2#photo-gallery{
+    text-align: center;
+}
+
+h3{
+    color: var(--text-color);
+}
+
+#home-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: safe;
+    align-content: center;
+}
+
 #home-photos{
     grid-column: 1;
     grid-row: 1;
@@ -181,4 +132,61 @@ h2#home-city{
     align-items: center;
 }
 
+iframe{
+    height: 92vh;
+    width: 45vw;
+    margin-left: 27vw;
+    margin-right: auto;
+}
 
+img#fluffy-mascot, img#stuntman{
+    padding-left: 15px;
+}
+
+li > a{
+    margin: 1em;
+    width : 5em;
+    padding : 1em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+li > a.language:hover{
+    color: var(--triton-yellow);
+    background-color: var(--triton-blue);
+}
+
+li > a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav {
+    /* background-color: white;  */
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+ol{
+    list-style-type: none;
+    li {
+        padding: 2dvh;
+    }
+}
+
+
+ul{
+    list-style-type: none;
+    /* text-align: center;  */
+    justify-content: center;
+    flex-wrap: wrap;
+    display : flex;
+    color : black;
+    background-color: var(--main-background-color);
+    margin: 0;
+    /* width : 5em; */
+    padding : 1em;
+}
