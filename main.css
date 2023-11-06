@@ -5,15 +5,27 @@
     --triton-yellow: #ffcd00;
 }
 
+@keyframes home-name-animation {
+    0% {color: var(--text-color);}
+    33% {color: var(--triton-yellow);}
+    66% {color: var(--triton-blue);}
+}
+
+@keyframes home-university-animation {
+    0% {color: var(--triton-yellow);}
+    33% {color: var(--triton-blue);}
+    66% {color: var(--text-color);}
+}
+
+@keyframes home-city-animation {
+    0% {color: var(--triton-blue);}
+    33% {color: var(--text-color);}
+    66% {color: var(--triton-yellow);}
+}
+
 body{
     background-color: var(--main-background-color);
     font-family: 'Gill sans', 'Trebuchet MS', sans-serif;
-}
-
-
-footer {
-    text-align: center;
-    color: var(--text-color);
 }
 
 nav {
@@ -22,6 +34,7 @@ nav {
     top: 0;
     margin: 0;
     padding: 0;
+    font-size: 1.25em;
 }
 
 
@@ -47,13 +60,14 @@ li > a{
     text-decoration: none;
 }
 
-li > a.class{
-    color: yellow;
+li > a.language:hover{
+    color: var(--triton-yellow);
+    background-color: var(--triton-blue);
 }
 
 li > a:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 h2{
@@ -62,18 +76,27 @@ h2{
 
 h2.about {
     padding: 0;
+    padding-top: 5vh;
     border: 0;
+    font-size: 4em;
 }
 
 h3{
     color: var(--text-color);
 }
 
+iframe{
+    height: 92vh;
+    width: 45vw;
+    margin-left: 27vw;
+    margin-right: auto;
+}
+
 .about{
     text-align: center;
     padding: 0;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 15vw;
+    padding-right: 15vw;
     list-style-type: none;
     color: white;
 }
@@ -81,6 +104,19 @@ h3{
 .active{
     background-color: white;
     color: black;
+    font-weight: bolder;
+}
+
+#gallery{
+    display: grid;
+    margin: 30px 20px;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+img#fluffy-mascot, img#stuntman{
+    padding-left: 15px;
 }
 
 #home-grid{
@@ -90,37 +126,52 @@ h3{
     align-content: center;
 }
 
-#home-name{
+h2#home-name{
+    font-size: 3em;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
     padding-top: 350px;
-    padding-right: 6em;
+    padding-right: 1em;
     display: block;
     text-align: center;
     color: var(--text-color);
+    /* animation-direction: alternate; */
+    animation-name: home-name-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-#home-university{
+h2#home-university{
+    font-size: 3em;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 380px;
-    padding-right: 6em;
+    padding-top: 400px;
+    padding-right: 1em;
     display: block;
     text-align: center;
     color: var(--triton-yellow);
+    /* animation-direction: alternate; */
+    animation-name: home-university-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-#home-city{
+h2#home-city{
+    font-size: 3em;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 410px;
-    padding-right: 6em;
+    padding-top: 450px;
+    padding-right: 1em;
     display: block;
     text-align: center;
     color: var(--triton-blue);
+    /* animation-direction: alternate; */
+    animation-name: home-city-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 #home-photos{
@@ -129,15 +180,5 @@ h3{
     margin: 0;
     align-items: center;
 }
-
-/* #home-name{
-    grid-column: 1;
-    grid-row: 1;
-    padding-top: 273px;
-    margin: 0;
-    display: block;
-    text-align: center;
-} */
-
 
 
