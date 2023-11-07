@@ -1,12 +1,34 @@
 body{
     background-color: #111;
+    color: white;
 }
 
-header{
-    background-color: white;
-    padding-right: 75dvw;
-    ul{
-        list-style-type: none;
-        color: rgb(0, 149, 230);
+
+/* [ON SMALL SCREENS] */
+@media screen and (min-width: 300px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
     }
-}
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+    input#hamburger{ 
+        opacity: 0; 
+        /* padding-right:  */
+    }
+  }
