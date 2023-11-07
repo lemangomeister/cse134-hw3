@@ -11,28 +11,29 @@
     </head>
     <body>
         <main>
-            <nav>
-                <ul>
-                    <li><a class="active" href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
-            <br>
             <header>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="links.html">Links</a></li>
+                    </ul>
+                </nav>
+         </header>
+            <br>
                 <section id="home-grid">
-                <picture id="home-photos">
-                    <source media="(min-width:1870px)" type ="image/jpeg" srcset="images/needsglasses.jpg" width="1230" height="810">
-                    <source media="(min-width:900px)" type="image/jpeg" srcset="images/needsglasses.jpg" width="861" height="567">
-                    <img  width="400" height="400" src="images/hasshades.jpg" alt="picture of mico">
+                <picture class="home-photo1">
+                    <source media="(min-width:1870px)" type ="image/png" srcset="images/toobright.png">
+                    <source media="(min-width:900px)" type="image/png" srcset="images/toobright50percent.png">
+                    <source media="(max-width:450px)" type="image/png" srcset="images/toobright25percent.png">
+                    <img  width="400" height="400" src="images/toobright.png" alt="picture of mico" class="home-image-responsive">
                 </picture>
                     <h2 id="home-name">Mico Guinto</h2><br>
                     <h2 id="home-university">University of California</h2><br>
                     <h2 id="home-city">San Diego</h2><br>
             </section>
-            </header>
             <!-- <section>
                 <h3>Projects</h3>
                 <details>

@@ -23,6 +23,24 @@
     66% {color: var(--triton-yellow);}
 }
 
+@media (max-width: 428px){
+    nav{
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav li{
+        list-style-type: none;
+    }
+
+    nav li a{
+
+    }
+}
+
 .about{
     text-align: center;
     padding: 0;
@@ -67,8 +85,8 @@ h2#home-name{
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 25dvh;
-    padding-right: 1em;
+    padding-top: 35dvh;
+    padding-right: 15vw;
     display: block;
     text-align: center;
     color: var(--text-color);
@@ -83,8 +101,8 @@ h2#home-university{
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 30dvh;
-    padding-right: 1em;
+    padding-top: 40dvh;
+    padding-right: 15vw;
     display: block;
     text-align: center;
     color: var(--triton-yellow);
@@ -99,8 +117,8 @@ h2#home-city{
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 35dvh;
-    padding-right: 1em;
+    padding-top: 45dvh;
+    padding-right: 15vw;
     display: block;
     text-align: center;
     color: var(--triton-blue);
@@ -125,11 +143,25 @@ h3{
     align-content: center;
 }
 
-#home-photos{
+/* .home-photo1{
+    display: block;
+    margin: auto;
+    padding-left: 25vw;
+    padding-top: 20vh;
+    align-items: center;
+    place-items: center;
     grid-column: 1;
     grid-row: 1;
     margin: 0;
-    align-items: center;
+} */
+
+.home-image-responsive{
+    max-width: 100%;
+    /* max-height: 100%; */
+    /* width: auto; */
+    height: auto;
+    padding-left: 25dvw;
+    padding-top: 20vh;
 }
 
 iframe{
