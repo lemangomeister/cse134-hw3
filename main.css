@@ -63,11 +63,11 @@ h2.about {
 }
 
 h2#home-name{
-    font-size: 3em;
+    font-size: 2.5dvw;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 350px;
+    padding-top: 25dvh;
     padding-right: 1em;
     display: block;
     text-align: center;
@@ -79,11 +79,11 @@ h2#home-name{
 }
 
 h2#home-university{
-    font-size: 3em;
+    font-size: 2.5dvw;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 400px;
+    padding-top: 30dvh;
     padding-right: 1em;
     display: block;
     text-align: center;
@@ -95,11 +95,11 @@ h2#home-university{
 }
 
 h2#home-city{
-    font-size: 3em;
+    font-size: 2.5dvw;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
-    padding-top: 450px;
+    padding-top: 35dvh;
     padding-right: 1em;
     display: block;
     text-align: center;
