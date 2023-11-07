@@ -36,9 +36,9 @@
         list-style-type: none;
     }
 
-    nav li a{
+    /* nav li a{
 
-    }
+    } */
 }
 
 .about{
@@ -175,6 +175,10 @@ img#fluffy-mascot, img#stuntman{
     padding-left: 15px;
 }
 
+legend{
+    text-align: center;
+}
+
 li > a{
     margin: 1em;
     width : 5em;
@@ -192,6 +196,18 @@ li > a:hover{
     background-color: white;
     color: black;
 }
+
+.github-link{
+    font-size: 1.5rem;
+    color: var(--triton-blue);
+}
+
+.email-link{
+    font-size: 1.5rem;
+    color: var(--triton-yellow);
+}
+
+
 
 nav {
     /* background-color: white;  */
