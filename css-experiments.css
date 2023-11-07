@@ -1,0 +1,12 @@
+body{
+    background-color: #111;
+}
+
+header{
+    background-color: white;
+    padding-right: 75dvw;
+    ul{
+        list-style-type: none;
+        color: rgb(0, 149, 230);
+    }
+}
