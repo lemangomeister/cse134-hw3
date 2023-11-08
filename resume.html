@@ -7,17 +7,25 @@
     </head>
     <body>
         <main>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html" class="active">Resume</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
-            <iframe id="resume" title="Resume" src="files/Resume.pdf" width="500" height="600">
-            </iframe>
+            <header>
+                <nav>
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger"/>
+                    <ul>
+                        <li><a id="menu" href="home.html">Home</a></li>
+                        <li><a id="menu" href="about.html">About</a></li>
+                        <li><a id="menu" href="resume.html" class="active">Resume</a></li>
+                        <li><a id="menu" href="gallery.html">Gallery</a></li>
+                        <li><a id="menu" href="links.html">Links</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <br>
+            <section>
+                <h2>Resume</h2>
+                <iframe id="resume" title="Resume" src="files/Resume.pdf" width="500" height="600">
+                </iframe>
+            </section>
             <br>
         </main>
     </body>
