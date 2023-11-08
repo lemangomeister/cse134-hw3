@@ -15,7 +15,7 @@
                 <nav>
                     <label for="hamburger">&#9776;</label>
                     <input type="checkbox" id="hamburger"/>
-                    <ul>
+                    <ul id="nav-menu">
                         <li><a id="menu" class="active" href="home.html">Home</a></li>
                         <li><a id="menu" href="about.html">About</a></li>
                         <li><a id="menu" href="resume.html">Resume</a></li>
@@ -23,14 +23,14 @@
                         <li><a id="menu" href="links.html">Links</a></li>
                     </ul>
                 </nav>
-         </header>
+            </header>
             <br>
                 <section id="home-grid">
                 <picture class="home-photo1">
-                    <source media="(min-width:1870px)" type ="image/png" srcset="images/toobright.png">
-                    <source media="(min-width:900px)" type="image/png" srcset="images/toobright50percent.png">
-                    <source media="(max-width:450px)" type="image/png" srcset="images/toobright25percent.png">
-                    <img  width="400" height="400" src="images/toobright.png" alt="picture of mico" class="home-image-responsive">
+                    <!-- <source media="(min-width:1024px)" type ="image/png" srcset="images/toobright.png" >
+                    <source media="(max-width:1023px)" type="image/png" srcset="images/toobright50percent.png">
+                    <source media="(max-width:450px)" type="image/png" srcset="images/toobright25percent.png"> -->
+                    <img  width="400" height="400" srcset="images/toobright50percent.png 400w, images/toobright.png, 800w" sizes="(max-width: 1279px) 480px, 800px " src="images/toobright.png" alt="picture of mico" class="home-image-responsive">
                 </picture>
                     <h2 id="home-name">Mico Guinto</h2><br>
                     <h2 id="home-university">University of California</h2><br>
