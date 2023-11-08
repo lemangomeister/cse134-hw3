@@ -37,7 +37,7 @@ body{
         font-weight: bolder;
     }
 
-    li > a#menu{
+    li > a.menu{
         padding: 0.5em;
         align-items: ;
         box-sizing: border-box;
@@ -325,6 +325,10 @@ h2#home-city{
     animation-iteration-count: infinite;
     color: var(--triton-blue);
 
+}
+
+h2.links{
+    text-align: center;
 }
 
 h2#photo-gallery, h2#resume-title{
