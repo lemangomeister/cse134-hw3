@@ -180,8 +180,8 @@ body{
     nav input:checked ~ ul { 
         display: block;
         list-style-type: none;
-        
     }
+    
     input#hamburger{
          opacity: 0; 
     }
@@ -196,7 +196,7 @@ body{
     .home-image-responsive{
         max-width: 100%;
         height: auto;
-        padding-left: 28vw;
+        padding-left: 35vw;
         padding-top: 5vh;
     }
 
