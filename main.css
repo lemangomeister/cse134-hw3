@@ -30,7 +30,7 @@ body{
 
 @media screen and (max-width: 450px){
 
-    .active{
+    #active{
         background-color: white;
         color: black;
         font-weight: bolder;
@@ -142,7 +142,7 @@ body{
 
 @media screen and (min-width: 451px) and (max-width: 900px){
 
-    .active{
+    #active{
         background-color: white;
         color: black;
         font-weight: bolder;
@@ -152,7 +152,7 @@ body{
         padding: 0.5em;
         box-sizing: border-box;
         display: block;
-        width: 10%;
+        width: 20%;
         text-decoration: none;
         color: var(--text-color);
     }
