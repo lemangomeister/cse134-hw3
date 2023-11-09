@@ -301,9 +301,9 @@ body{
     }
 
     label{
-        /* display: none; */
         visibility: hidden;
     }
+
     input#hamburger{ visibility: hidden;}
     /* navbar */
 
@@ -375,28 +375,32 @@ body{
     }
     /* gallery */
 
-    /* links */
-    ul#link-list{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0;
-        padding: 0;
-    }
 
-    .github-link{
-        font-size: 1.5rem;
-        color: var(--triton-blue);
-        text-decoration: none;
-    }
-    
-    .email-link{
-        font-size: 1.5rem;
-        color: var(--triton-yellow);
-        text-decoration: none;
-    }
-    /* links */
 }
+
+/* links */
+ul#link-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.github-link{
+    display: flex;
+
+    font-size: 1.5rem;
+    color: var(--triton-blue);
+    text-decoration: none;
+}
+
+.email-link{
+    font-size: 1.5rem;
+    color: var(--triton-yellow);
+    text-decoration: none;
+}
+/* links */
 
 .about{
     text-align: center;
@@ -460,7 +464,7 @@ h3{
 }
 
 iframe{
-    /* margin-left: 27vw; */
+    margin-left: 27vw;
     margin-right: auto;
 }
 
@@ -469,7 +473,7 @@ li {
         text-decoration: none;
         color: var(--sample-color);
     }
-    
+
     a.language:hover{
         color: var(--triton-yellow);
         background-color: var(--triton-blue);
