@@ -60,10 +60,9 @@ body{
             font-size: 1.2em;
             padding: 10px;
         }
-    }
-
-    ul { 
-        display: none;
+        ul { 
+            display: none;
+        }
     }
 
     nav input:checked ~ ul { 
@@ -78,7 +77,6 @@ body{
     #home-grid{
         display: grid;
         grid-template-rows: auto auto;
-        justify-content: safe;
         align-content: center;
     }
 
@@ -138,6 +136,16 @@ body{
         align-content: center;
         justify-content: space-evenly;
     }
+
+    section{
+        ul{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
 }
 
 @media screen and (min-width: 451px) and (max-width: 900px){
@@ -189,7 +197,6 @@ body{
     #home-grid{
         display: grid;
         grid-template-rows: auto auto;
-        justify-content: safe;
         align-content: center;
     }
 
@@ -261,9 +268,8 @@ body{
         font-weight: bolder;
     }
 
-    li > a{
+    li > a.menu{
         margin: 0.5em;
-        /* width : 5em; */
         padding : 1em;
         color: var(--text-color);
         text-decoration: none;
@@ -275,7 +281,6 @@ body{
     }
 
     nav {
-        display: flex-box;
         position: sticky;
         top: 0;
         margin: 0;
@@ -287,7 +292,6 @@ body{
         position: sticky;
         list-style-type: none;
         justify-content: center;
-        /* flex-wrap: wrap; */
         display : flex;
         color : black;
         background-color: var(--main-background-color);
@@ -306,7 +310,6 @@ body{
     #home-grid{
         display: grid;
         grid-template-columns: auto auto;
-        justify-content: safe;
         align-content: center;
     }
     
@@ -374,11 +377,21 @@ body{
     /* links */
     ul#link-list{
         list-style-type: none;
+        text-decoration: none;
         display: flex;
-        /* align-items: center; */
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 0;
-        padding : 0;
+        padding: 0;
+    }
+
+    .github-link{
+        font-size: 1.5rem;
+        color: var(--triton-blue);
+    }
+    
+    .email-link{
+        font-size: 1.5rem;
+        color: var(--triton-yellow);
     }
     /* links */
     
@@ -442,11 +455,6 @@ h3{
     color: var(--text-color);
 }
 
-header {
-    display: flex-box;
-    position: sticky;
-}
-
 iframe{
     /* margin-left: 27vw; */
     margin-right: auto;
@@ -457,21 +465,12 @@ li > a.language:hover{
     background-color: var(--triton-blue);
 }
 
-.github-link{
-    font-size: 1.5rem;
-    color: var(--triton-blue);
-}
-
-.email-link{
-    font-size: 1.5rem;
-    color: var(--triton-yellow);
-}
-
 ol{
     list-style-type: none;
-    li {
-        padding: 2dvh;
-    }
+}
+
+ol > li {
+    padding: 2dvh;
 }
 
 #photo-gallery{
