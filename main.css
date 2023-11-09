@@ -142,7 +142,7 @@ body{
     }
 }
 
-@media screen and (min-width: 450px){
+@media screen and (max-width: 900px){
 
     .active{
         background-color: white;
