@@ -29,7 +29,6 @@ body{
 }
 
 @media screen and (max-width: 800px){
-    /* burger menu starts */
 
     .active{
         background-color: white;
@@ -39,7 +38,6 @@ body{
 
     li > a.menu{
         padding: 0.5em;
-        /* align-items: ; */
         box-sizing: border-box;
         display: block;
         width: 10%;
@@ -76,9 +74,7 @@ body{
         
     }
     input#hamburger{ opacity: 0; }
-    /* burger menu ends */
 
-    /*home page*/
     #home-grid{
         display: grid;
         grid-template-rows: auto auto;
@@ -94,39 +90,34 @@ body{
     }
 
     h2#home-name{
-        font-size: 5dvh;
+        font-size: 6dvw;
         grid-column: 1;
         grid-row: 2;
         margin: 0;
         padding-top: 3dvh;
-        /* padding-bottom: 10dvh; */
-        /* padding-right: 15vw; */
         display: block;
         text-align: center;
     }
 
     h2#home-university{
-        font-size: 5dvh;
+        font-size: 6dvw;
         grid-column: 1;
         grid-row: 2;
         margin: 0;
         padding-top: 9dvh;
-        /* padding-right: 15vw; */
         display: block;
         text-align: center;
     }
 
     h2#home-city{
-        font-size: 5dvh;
+        font-size: 6dvw;
         grid-column: 1;
         grid-row: 2;
         margin: 0;
         padding-top: 15dvh;
-        /* padding-right: 15vw; */
         display: block;
         text-align: center;
     }
-    /*home page*/
 
     iframe{
         display: grid;
@@ -136,7 +127,6 @@ body{
         margin-left: 13vw;
     }
 
-    /* gallery */
     img#fluffy-mascot, img#stuntman{
         padding-left: 15px;
     }
@@ -148,7 +138,6 @@ body{
         align-content: center;
         justify-content: space-evenly;
     }
-    /* gallery */
 }
 
 @media screen and (min-width: 801px){
