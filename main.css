@@ -28,7 +28,7 @@ body{
     66% {color: var(--triton-yellow);}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 450px){
 
     .active{
         background-color: white;
@@ -85,11 +85,9 @@ body{
     }
 
     .home-image-responsive{
-        position: relative;
-        display: block;
         max-width: 100%;
         height: auto;
-        padding-left: 26vw;
+        padding-left: 24vw;
         padding-top: 5vh;
     }
 
