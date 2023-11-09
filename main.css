@@ -3,6 +3,7 @@
     --text-color: white;
     --triton-blue: rgb(0, 149, 230);
     --triton-yellow: #ffcd00;
+    --sample-color: color-mix(in srgb,#f57d1b, lime);
 }
 
 body{
@@ -51,7 +52,7 @@ body{
     }
 
 
-    nav  {
+    nav {
         label{
             display: inline-block; 
             color: white;
@@ -377,7 +378,6 @@ body{
     /* links */
     ul#link-list{
         list-style-type: none;
-        text-decoration: none;
         display: flex;
         justify-content: space-evenly;
         margin: 0;
@@ -387,15 +387,15 @@ body{
     .github-link{
         font-size: 1.5rem;
         color: var(--triton-blue);
+        text-decoration: none;
     }
     
     .email-link{
         font-size: 1.5rem;
         color: var(--triton-yellow);
+        text-decoration: none;
     }
     /* links */
-    
-
 }
 
 .about{
@@ -446,6 +446,10 @@ h2.links{
     text-align: center;
 }
 
+h2.links:hover{
+    color: var(--sample-color);
+}
+
 h2#photo-gallery, h2#resume-title{
     text-align: center;
 }
@@ -460,9 +464,16 @@ iframe{
     margin-right: auto;
 }
 
-li > a.language:hover{
-    color: var(--triton-yellow);
-    background-color: var(--triton-blue);
+li {
+    a.language{
+        text-decoration: none;
+        color: var(--sample-color);
+    }
+    
+    a.language:hover{
+        color: var(--triton-yellow);
+        background-color: var(--triton-blue);
+    }
 }
 
 ol{
