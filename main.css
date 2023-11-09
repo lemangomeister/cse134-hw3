@@ -7,26 +7,26 @@
 }
 
 body{
-    background-color: var(--main-background-color);
+    background-color: var(--main-background-color, grey);
     font-family: 'Gill sans', 'Trebuchet MS', sans-serif;
 }
 
 @keyframes home-name-animation {
-    0% {color: var(--text-color);}
-    33% {color: var(--triton-yellow);}
-    66% {color: var(--triton-blue);}
+    0% {color: var(--text-color, white);}
+    33% {color: var(--triton-yellow, yellow);}
+    66% {color: var(--triton-blue, blue);}
 }
 
 @keyframes home-university-animation {
-    0% {color: var(--triton-yellow);}
-    33% {color: var(--triton-blue);}
-    66% {color: var(--text-color);}
+    0% {color: var(--triton-yellow, yellow);}
+    33% {color: var(--triton-blue, blue);}
+    66% {color: var(--text-color, white);}
 }
 
 @keyframes home-city-animation {
-    0% {color: var(--triton-blue);}
-    33% {color: var(--text-color);}
-    66% {color: var(--triton-yellow);}
+    0% {color: var(--triton-blue, blue);}
+    33% {color: var(--text-color, white);}
+    66% {color: var(--triton-yellow, yellow);}
 }
 
 @media screen and (max-width: 450px){
@@ -43,7 +43,7 @@ body{
         display: block;
         width: 25%;
         text-decoration: none;
-        color: var(--text-color);
+        color: var(--text-color, white);
     }
 
     li > a:hover{
@@ -168,7 +168,7 @@ body{
         display: block;
         width: 20%;
         text-decoration: none;
-        color: var(--text-color);
+        color: var(--text-color, green);
     }
 
     li > a:hover{
@@ -327,9 +327,11 @@ body{
     .home-image-responsive{
         max-width: 100%;
         height: auto;
-        padding-left: 25vw;
-        padding-top: 20vh;
+        margin-left: 25vw;
+        margin-top: 20vh;
     }
+
+
 
     h2#home-name{
         font-size: 2.5dvw;
@@ -391,6 +393,12 @@ body{
     }
 }
 
+picture > img:hover{
+    transform: scale(0.75);
+    transition: 1s;
+    transition-timing-function: ease;
+}
+
 /* links */
 ul#link-list{
     list-style-type: none;
@@ -425,7 +433,7 @@ ul#link-list{
 }
 
 h2{
-    color: var(--text-color);
+    color: var(--text-color, green);
 }
 
 h2.about {
@@ -439,7 +447,7 @@ h2#home-name{
     animation-name: home-name-animation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    color: var(--text-color);
+    color: var(--text-color, green);
 
 }
 
@@ -473,7 +481,7 @@ h2#photo-gallery, h2#resume-title{
 
 
 h3{
-    color: var(--text-color);
+    color: var(--text-color, green);
 }
 
 li {
