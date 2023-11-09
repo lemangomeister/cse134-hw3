@@ -28,7 +28,7 @@ body{
     66% {color: var(--triton-yellow);}
 }
 
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 800px){
     /* burger menu starts */
 
     .active{
@@ -39,7 +39,7 @@ body{
 
     li > a.menu{
         padding: 0.5em;
-        align-items: ;
+        /* align-items: ; */
         box-sizing: border-box;
         display: block;
         width: 10%;
@@ -151,7 +151,7 @@ body{
     /* gallery */
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 801px){
 
     /* navbar */
 
