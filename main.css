@@ -265,6 +265,7 @@ body{
     
     iframe{
         margin: auto;
+        width: 100%;
     }
 }
 
