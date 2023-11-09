@@ -142,6 +142,120 @@ body{
     }
 }
 
+@media screen and (min-width: 450px){
+
+    .active{
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+    }
+
+    li > a.menu{
+        padding: 0.5em;
+        box-sizing: border-box;
+        display: block;
+        width: 10%;
+        border-top: 1px solid #333;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    li > a:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+    nav  {
+        position: sticky;
+        label{
+            display: inline-block; 
+            color: white;
+            background: var(--triton-blue);
+            font-style: normal;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    }
+
+    ul { 
+        display: none;
+    }
+
+    nav input:checked ~ ul { 
+        display: block;
+        list-style-type: none;
+        
+    }
+    input#hamburger{
+         opacity: 0; 
+    }
+
+    #home-grid{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: safe;
+        align-content: center;
+    }
+
+    .home-image-responsive{
+        max-width: 100%;
+        height: auto;
+        padding-left: 28vw;
+        padding-top: 5vh;
+    }
+
+    h2#home-name{
+        font-size: 6dvw;
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        padding-top: 3dvh;
+        display: block;
+        text-align: center;
+    }
+
+    h2#home-university{
+        font-size: 6dvw;
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        padding-top: 9dvh;
+        display: block;
+        text-align: center;
+    }
+
+    h2#home-city{
+        font-size: 6dvw;
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        padding-top: 15dvh;
+        display: block;
+        text-align: center;
+    }
+
+    iframe{
+        display: grid;
+        justify-content: center;
+        height: 80dvh;
+        width: 75vw;
+        margin-left: 13vw;
+    }
+
+    img#fluffy-mascot, img#stuntman{
+        padding-left: 15px;
+    }
+
+    #gallery{
+        display: grid;
+        margin: 30px 20px;
+        grid-template-rows: auto auto auto auto;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (min-width: 901px){
 
     /* navbar */
