@@ -147,6 +147,10 @@ body{
             text-decoration: none;
         }
     }
+
+    iframe{
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 451px) and (max-width: 900px){
@@ -256,6 +260,10 @@ body{
         grid-template-rows: auto auto auto auto;
         align-content: center;
         justify-content: space-evenly;
+    }
+    
+    iframe{
+        margin: auto;
     }
 }
 
@@ -375,7 +383,10 @@ body{
     }
     /* gallery */
 
-
+    iframe{
+        margin-left: 27vw;
+        margin-right: auto;
+    }
 }
 
 /* links */
@@ -461,11 +472,6 @@ h2#photo-gallery, h2#resume-title{
 
 h3{
     color: var(--text-color);
-}
-
-iframe{
-    margin-left: 27vw;
-    margin-right: auto;
 }
 
 li {
