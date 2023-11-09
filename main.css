@@ -37,7 +37,7 @@ body{
     }
 
     li > a.menu{
-        padding: 0.25em 0.55em 0.25em 0.25em;
+        padding: 0.5em;
         box-sizing: border-box;
         display: block;
         width: 20%;
@@ -153,7 +153,6 @@ body{
         box-sizing: border-box;
         display: block;
         width: 10%;
-        border-top: 1px solid #333;
         text-decoration: none;
         color: var(--text-color);
     }
