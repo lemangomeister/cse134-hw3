@@ -28,7 +28,7 @@ body{
     66% {color: var(--triton-yellow);}
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 
     .active{
         background-color: white;
@@ -85,7 +85,8 @@ body{
     .home-image-responsive{
         max-width: 100%;
         height: auto;
-        padding-left: 25dvw;
+        padding-left: 26vw;
+
         padding-top: 5vh;
     }
 
@@ -140,7 +141,7 @@ body{
     }
 }
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 900px){
 
     /* navbar */
 
